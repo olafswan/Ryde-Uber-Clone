@@ -1,50 +1,52 @@
-# Welcome to your Expo app 👋
+## Build a Full Stack React Native App with Payments | PostgreSQL, TypeScript, Stripe, Tailwind [📺](https://youtu.be/kmy_YNhl0mw) 
+#### by Adrian Hajdin  from [JavaScript Mastery](https://www.youtube.com/@javascriptmastery) YouTube channel
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+<!-- ### 🧠 Concepts Covered:
 
-1. Install dependencies
+- Expo React Native framework
+- NativeWind
+- Sending Data
+- Rendering HTML
+- Routers
+- Advanced Routing
+- Middleware
+- Rendering Static Files
+- Parsing Form/JSON Data
+- Parse Query Params-->
 
-   ```bash
-   npm install
-   ```
+### 🖥 Terminal commands used
 
-2. Start the app
+#### Install NatieWind
+```npm install nativewind ``` 
+```npm install --save-dev tailwindcss@3.3.2```
 
-   ```bash
-    npx expo start
-   ```
+#### Install SafeAreaView @21:10
+```npm install react-native-safe-area-context```
 
-In the output, you'll find options to open the app in a
+#### To restart Expo Go :
+```Ctrl + C```
+```npx expo start -c```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+#### Install ESLint @23:50
+```npx expo lint```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+#### Install Prettier @23:50
+```npx expo install -- --save-dev prettier eslint-config-prettier eslint-plugin-prettier```
 
-## Get a fresh project
+#### Install npm install react-native-swiper @50:32
+```npm install react-native-swiper```
 
-When you're ready, run:
+#### Install Clerk @1:31:30
+```npx expo install react-dom react-native-web @expo/metro-runtime```
+```npm install @clerk/clerk-expo```
 
-```bash
-npm run reset-project
-```
+#### Install Expo Secure Store @1:34:00
+```npm install expo-secure-store```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+#### Install Native Modal @1:41:45
+```npm install react-native-modal```
 
-## Learn more
+#### Install Expo Local Authentication Store @1:44:00
+```npm install expo-local-authentication```
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
