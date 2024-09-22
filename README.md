@@ -1,42 +1,61 @@
-# Install NatieWind
+## Build a Full Stack React Native App with Payments | PostgreSQL, TypeScript, Stripe, Tailwind [📺](https://youtu.be/kmy_YNhl0mw)
 
-npm install nativewind  
-npm install --save-dev tailwindcss@3.3.2
+#### by Adrian Hajdin from [JavaScript Mastery](https://www.youtube.com/@javascriptmastery) YouTube channel
 
-# Install NatieWind @21:10
+<!-- ### 🧠 Concepts Covered:
 
-<!-- npm install react-native-safe-area-context -->
+- Expo React Native framework
+- NativeWind
+- Sending Data
+- Rendering HTML
+- Routers
+- Advanced Routing
+- Middleware
+- Rendering Static Files
+- Parsing Form/JSON Data
+- Parse Query Params-->
 
-# To restart Expo Go :
+### 🖥 Terminal commands used
 
-Ctrl + C
-npx expo start --clear
+#### Install NatieWind
 
-# Install ESLint @23:50
+`npm install nativewind `
+`npm install --save-dev tailwindcss@3.3.2`
 
-npx expo lint
+#### Install SafeAreaView @21:10
 
-# Install Prettier @23:50
+`npm install react-native-safe-area-context`
 
-npx expo install -- --save-dev prettier eslint-config-prettier eslint-plugin-prettier
+#### To restart Expo Go :
 
-# Install npm install react-native-swiper @50:32
+`Ctrl + C`
+`npx expo start -c`
 
-npm install react-native-swiper
+#### Install ESLint @23:50
 
-# Install Clerk @1:31:30
+`npx expo lint`
 
-npx expo install react-dom react-native-web @expo/metro-runtime
-npm install @clerk/clerk-expo
+#### Install Prettier @23:50
 
-# Install Expo Secure Store @1:34:00
+`npx expo install -- --save-dev prettier eslint-config-prettier eslint-plugin-prettier`
 
-npm install expo-secure-store
+#### Install npm install react-native-swiper @50:32
 
-# Install Native Modal @1:41:45
+`npm install react-native-swiper`
 
-npm install react-native-modal
+#### Install Clerk @1:31:30
 
-# Install Expo Local Authentication Store @1:44:00
+`npx expo install react-dom react-native-web @expo/metro-runtime`
+`npm install @clerk/clerk-expo`
 
-npm install expo-local-authentication
+#### Install Expo Secure Store @1:34:00
+
+`npm install expo-secure-store`
+
+#### Install Native Modal @1:41:45
+
+`npm install react-native-modal`
+
+#### Install Expo Local Authentication Store @1:44:00
+
+`npm install expo-local-authentication`
