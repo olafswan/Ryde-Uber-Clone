@@ -4,11 +4,11 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
 
-// TODO next line(s) commented to fix the bug
-// import { ClerkProvider, ClerkLoaded } from '@clerk/clerk-expo'
-// import { Slot } from 'expo-router'
 
-// const publishableKey = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY!
+import { ClerkProvider, ClerkLoaded } from '@clerk/clerk-expo'
+import { Slot } from 'expo-router'
+
+const publishableKey = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY!
 
 // if (!publishableKey) {
 //   throw new Error(
@@ -43,21 +43,16 @@ export default function RootLayout() {
   }
 
   return (
-    // function RootLayoutNav() {
-    //   return (
-// TODO next line(s) commented to fix the bug
-        // <ClerkProvider publishableKey={publishableKey}>
-        //   <ClerkLoaded>
+        <ClerkProvider publishableKey={publishableKey}>
+          <ClerkLoaded>
             <Stack>
               <Stack.Screen name="index" options={{ headerShown: false }} />
               <Stack.Screen name="(auth)" options={{ headerShown: false }} />
               <Stack.Screen name="(root)" options={{ headerShown: false }} />
               <Stack.Screen name="+not-found" />
             </Stack>
-// TODO next line(s) commented to fix the bug
-        //   </ClerkLoaded>
-        // </ClerkProvider>
+          </ClerkLoaded>
+        </ClerkProvider>
       )
     }
-//   );
-// }
+

@@ -7,7 +7,6 @@ export default function Page() {
   const { user } = useUser()
 
   return (
-    // TODO next line(s) commented to fix the bug
     <View>
       <SignedIn>
         <Text>Hello {user?.emailAddresses[0].emailAddress}</Text>
@@ -20,7 +19,6 @@ export default function Page() {
           <Text>Sign Up</Text>
         </Link>
       </SignedOut>
-      // TODO next line(s) commented to fix the bug
     </View>
   )
 }

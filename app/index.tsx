@@ -6,12 +6,11 @@ import { useAuth } from '@clerk/clerk-expo'
 
 const Home = () => {
 
-  // TODO next line(s) commented to fix the bug 1:37:07
-  // const { isSignedIn } = useAuth()
+  const { isSignedIn } = useAuth()
 
-  // if (isSignedIn) {
-  //   return <Redirect href={'/(root)/(tabs)/home'} />
-  // }
+  if (isSignedIn) {
+    return <Redirect href={'/(root)/(tabs)/home'} />
+  }
 
   return <Redirect href="/(auth)/welcome" />;
 };
