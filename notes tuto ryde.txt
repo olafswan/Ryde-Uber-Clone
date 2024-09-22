@@ -1,0 +1,12 @@
+fichier pouvant contenir l'erreur :
+
+lib/auth.ts
+(tabs)/home.tsx
+app/index.tsx
+app/_layout.tsx
+(auth)/sign-up.tsx
+(auth)/sign-in.tsx
+components/OAuth.tsx
+components/InputField.tsx
+
+timestamp : 1:44:

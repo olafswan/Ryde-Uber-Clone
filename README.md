@@ -1,50 +1,42 @@
-# Welcome to your Expo app 👋
+# Install NatieWind
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+npm install nativewind  
+npm install --save-dev tailwindcss@3.3.2
 
-## Get started
+# Install NatieWind @21:10
 
-1. Install dependencies
+<!-- npm install react-native-safe-area-context -->
 
-   ```bash
-   npm install
-   ```
+# To restart Expo Go :
 
-2. Start the app
+Ctrl + C
+npx expo start --clear
 
-   ```bash
-    npx expo start
-   ```
+# Install ESLint @23:50
 
-In the output, you'll find options to open the app in a
+npx expo lint
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+# Install Prettier @23:50
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+npx expo install -- --save-dev prettier eslint-config-prettier eslint-plugin-prettier
 
-## Get a fresh project
+# Install npm install react-native-swiper @50:32
 
-When you're ready, run:
+npm install react-native-swiper
 
-```bash
-npm run reset-project
-```
+# Install Clerk @1:31:30
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+npx expo install react-dom react-native-web @expo/metro-runtime
+npm install @clerk/clerk-expo
 
-## Learn more
+# Install Expo Secure Store @1:34:00
 
-To learn more about developing your project with Expo, look at the following resources:
+npm install expo-secure-store
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# Install Native Modal @1:41:45
 
-## Join the community
+npm install react-native-modal
 
-Join our community of developers creating universal apps.
+# Install Expo Local Authentication Store @1:44:00
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+npm install expo-local-authentication
