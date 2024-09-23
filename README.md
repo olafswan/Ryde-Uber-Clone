@@ -59,3 +59,7 @@
 #### Install Expo Local Authentication Store @1:44:00
 
 `npm install expo-local-authentication`
+
+#### Install Neon Database @2:11:50
+
+`npm install @neondatabase/serverless`
