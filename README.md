@@ -71,3 +71,7 @@
 #### Install Zustand @3:05:25
 
 `npm install zustand`
+
+#### Install Expo Location @3:12:30
+
+`npm install expo-location`
