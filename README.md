@@ -63,3 +63,11 @@
 #### Install Neon Database @2:11:50
 
 `npm install @neondatabase/serverless`
+
+#### Install Maps & Directions @3:01:40
+
+`npm install react-native-maps react-native`
+
+#### Install Zustand @3:05:25
+
+`npm install zustand`
