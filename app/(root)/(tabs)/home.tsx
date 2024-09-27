@@ -124,7 +124,7 @@ const recentRides = [
 ];
 
 export default function Page() {
-  const { setUserLocation, setDestinationLocation } = useLocationStore;
+  const { setUserLocation, setDestinationLocation } = useLocationStore();
   const { user } = useUser();
   const loading = false;
 
@@ -150,11 +150,23 @@ export default function Page() {
         latitude: location.coords?.latitude!,
         longitude: location.coords?.longitude!,
       });
+      console.log(
+        "🚀 ~ home.tsx ~ requestLocation ~ location.coords.longitude:",
+        location.coords.longitude
+      );
+      console.log(
+        "🚀 ~ home.tsx ~ requestLocation ~ location.coords.latitude:",
+        location.coords.latitude
+      );
       setUserLocation({
         latitude: location.coords.latitude,
         longitude: location.coords.longitude,
         address: `${address[0].name}, ${address[0].region}`,
       });
+      console.log(
+        "🚀 is the Zustand store updated correctly?",
+        useLocationStore.getState()
+      );
     };
     requestLocation();
   }, []);
