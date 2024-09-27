@@ -75,3 +75,7 @@
 #### Install Expo Location @3:12:30
 
 `npm install expo-location`
+
+#### Install Google Places Autocomplete @3:26:20
+
+`npm install react-native-google-places-autocomplete`
