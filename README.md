@@ -79,3 +79,7 @@
 #### Install Google Places Autocomplete @3:26:20
 
 `npm install react-native-google-places-autocomplete`
+
+#### Install Gesture Handler @3:43:30
+
+`npm install react-native-gesture-handler`
