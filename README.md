@@ -87,3 +87,8 @@
 #### Install React Native Bottom Sheet @3:47:10
 
 `npm i @gorhom/bottom-sheet`
+
+#### Install Stripe @4:08:45
+
+`npm i stripe --save`
+`npm install @stripe/stripe-react-native`
