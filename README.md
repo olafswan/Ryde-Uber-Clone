@@ -83,3 +83,7 @@
 #### Install Gesture Handler @3:43:30
 
 `npm install react-native-gesture-handler`
+
+#### Install React Native Bottom Sheet @3:47:10
+
+`npm i @gorhom/bottom-sheet`
