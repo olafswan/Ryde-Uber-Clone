@@ -70,6 +70,9 @@ const Map = () => {
   });
 
   useEffect(() => {
+    // TODO mocked drivers had to be deleted
+    setDrivers(drivers);
+
     if (Array.isArray(drivers)) {
       if (!userLatitude || !userLongitude) return;
 
