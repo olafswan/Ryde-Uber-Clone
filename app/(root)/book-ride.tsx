@@ -13,8 +13,6 @@ const BookRide = () => {
   const { user } = useUser();
   const { userAddress, destinationAddress } = useLocationStore();
   const { drivers, selectedDriver } = useDriverStore();
-  console.log("🚀 ~ BookRide ~ drivers:", drivers);
-  console.log("🚀 ~ BookRide ~ selectedDriver:", selectedDriver);
 
   // const [publishableKey, setPublishableKey] = useState("");
 
@@ -34,7 +32,7 @@ const BookRide = () => {
   return (
     <StripeProvider
       publishableKey={process.env.EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY!}
-      merchantIdentifier="merchant.ryde.com" // required for Apple Pay
+      merchantIdentifier="merchant.uber.com" // required for Apple Pay
       urlScheme="myapp" // required for 3D Secure and bank redirects
     >
       <RideLayout title="Book Ride">
@@ -78,7 +76,7 @@ const BookRide = () => {
             <View className="flex flex-row items-center justify-between w-full border-b border-white py-3">
               <Text className="text-lg font-JakartaRegular">Pickup Time</Text>
               <Text className="text-lg font-JakartaRegular">
-                {formatTime(driverDetails?.time! || 5!)}
+                {formatTime(parseInt(`${driverDetails.time}`) || 5)}
               </Text>
             </View>
 
@@ -105,7 +103,13 @@ const BookRide = () => {
               </Text>
             </View>
           </View>
-          <Payment />
+          <Payment
+            fullName={user?.fullName!}
+            email={user?.emailAddresses[0].emailAddress!}
+            amount={driverDetails?.price!}
+            driverId={driverDetails?.id}
+            rideTime={driverDetails?.time!}
+          />
         </>
       </RideLayout>
     </StripeProvider>

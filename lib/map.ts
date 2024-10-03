@@ -36,8 +36,8 @@ export const calculateRegion = ({
     destinationLongitude?: number | null;
 }) => {
     if (!userLatitude || !userLongitude) {
-        console.log("🚀 ~ map.ts ~ calculatreRegion ~ userLongitude:", userLongitude)
-        console.log("🚀 ~ map.ts ~ calculatreRegion ~ userLatitude:", userLatitude)
+        // console.log("🚀 ~ map.ts ~ calculatreRegion ~ userLongitude:", userLongitude)
+        // console.log("🚀 ~ map.ts ~ calculatreRegion ~ userLatitude:", userLatitude)
         return {
             latitude: 37.78825,
             longitude: -122.4324,

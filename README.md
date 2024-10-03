@@ -92,3 +92,7 @@
 
 `npm i stripe --save`
 `npm install @stripe/stripe-react-native`
+
+#### Install Maps Directions @4:50:20
+
+`npm install react-native-maps-directions`
