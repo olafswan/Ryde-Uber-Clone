@@ -1,6 +1,6 @@
 import { SafeAreaView } from "react-native-safe-area-context";
 import * as Location from "expo-location";
-import { SignedIn, useUser } from "@clerk/clerk-expo";
+import { SignedIn, useAuth, useUser } from "@clerk/clerk-expo";
 import {
   Text,
   View,
@@ -22,6 +22,7 @@ import { Ride } from "@/types/type";
 export default function Page() {
   const { setUserLocation, setDestinationLocation } = useLocationStore();
   const { user } = useUser();
+  const { signOut } = useAuth();
   const {
     data: recentRides,
     loading,
@@ -31,8 +32,8 @@ export default function Page() {
   const [hasPermissions, setHasPermissions] = useState(false);
 
   const handleSignOut = () => {
-    // signOut();
-    // router.replace("/(auth)/sign-in");
+    signOut();
+    router.replace("/(auth)/sign-in");
   };
   const handleDestinationPress = (location: {
     latitude: number;
@@ -103,7 +104,7 @@ export default function Page() {
                 Welcome {user?.firstName}👋
               </Text>
               <TouchableOpacity
-                // onPress={handleSignOut}
+                onPress={handleSignOut}
                 className="justify-center items-center w-10 h-10 rounded-full bg-white"
               >
                 <Image source={icons.out} className="w-4 h-4" />
